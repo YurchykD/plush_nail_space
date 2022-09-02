@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 320px;
+
+    &__container {
+      display: flex;
+    }
+
+    &__social {
+        margin: 0;
+        height: 135px;
+        width: 135px;
+        border-radius: 20px;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            &--text {
+                margin: 5px;
+                color: rgb(255, 225, 52);
+                font-size: 16px;
+                line-height: 16px;
+                font-family: 'Fira Sans', sans-serif;
+                font-weight: normal;
+                text-align: center;
+                transition: transform 0.3s linear;
+            }
+        }
+
+        &-img {
+
+            transition: transform 0.3s linear;
+            margin-top: 10px;
+            width: 80px;
+            height: 80px;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

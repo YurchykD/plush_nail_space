@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Fira+Sans:ital,wght@1,300&family=Russo+One&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+.page {
+  margin: 10px;
+  min-height: 100vh;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Russo One", sans-serif;
+  background-image: url(/images/final_background_2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 720px) and (max-width: 1439px) {
+  .page {
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 719px) {
+  .page {
+    background-size: 100% 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+
+ul,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+br {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.header__logo {
+  max-width: 350px;
+  margin: 2px 0 20px 0;
+  border-radius: 20px;
+}
+.header__logotext {
+  font-family: "Russo One", sans-serif;
+  color: #ffec1c;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 68px;
+}
+.header__logotext-white {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+}
+.header__logotext-small {
+  color: white;
+  font-size: 18px;
+}
+.header__container {
+  display: flex;
+  width: 90%;
+}
+.header__container-text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  color: #ffec1c;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+  max-width: 320px;
+}
+.main__container {
+  display: flex;
+}
+.main__social {
+  margin: 0;
+  height: 135px;
+  width: 135px;
+  border-radius: 20px;
+}
+.main__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.main__social-link--text {
+  margin: 5px;
+  color: rgb(255, 225, 52);
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  transition: transform 0.3s linear;
+}
+.main__social-img {
+  transition: transform 0.3s linear;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+}
+.main__social-img:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=styles.css.map */
