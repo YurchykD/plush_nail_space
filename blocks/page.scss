@@ -41,3 +41,15 @@ br {
   margin: 0;
   list-style: none;
 }
+
+.tooltip {
+  position: absolute;
+  font-family: 'Fira Sans', sans-serif;
+  z-index: 1;
+  display: none;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.25rem;
+}

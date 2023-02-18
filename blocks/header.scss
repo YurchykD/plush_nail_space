@@ -6,7 +6,6 @@
     align-items: center;
 
     &__logo {
-        
         max-width: 350px;
         margin: 2px 0 20px 0;
         border-radius: 20px;
@@ -32,15 +31,23 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
         width: 90%;
 
         &-text {
             font-family: 'Fira Sans', sans-serif;
             font-size: 20px;
-            margin: 0 auto;
+            margin: 5px auto;
             text-align: center;
             font-weight: normal;
             color: #ffec1c;
+
+            &--card {
+                opacity: 0%;
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 1px;
+                color: #f12e2e;
+            }
         }
     }
 }
