@@ -129,42 +129,6 @@ br {
   text-align: center;
   align-items: center;
 }
-.main__social-link--tooltip {
-  font-family: "Fira Sans", sans-serif;
-  position: relative;
-  cursor: pointer;
-}
-.main__social-link--tooltip::before {
-  content: attr(title);
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: max-content;
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border-radius: 0.25rem;
-}
-.main__social-link--tooltip::after {
-  content: attr(title);
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: max-content;
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border-radius: 0.25rem;
-}
-.main__social-link--tooltip:hover::before {
-  display: block;
-}
 .main__social-link--text {
   margin: 5px;
   color: rgb(255, 225, 52);
@@ -183,6 +147,73 @@ br {
 }
 .main__social-img:hover {
   transform: scale(1.2);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+.container__title {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 0.6px #000;
+  -webkit-text-fill-color: rgb(219, 189, 18);
+}
+
+.form {
+  padding: 20px;
+  border: 3px solid #000;
+  border-radius: 6%;
+  background-color: rgba(155, 145, 107, 0.3);
+}
+.form__label {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: rgb(255, 225, 52);
+}
+@media (min-width: 280px) and (max-width: 340px) {
+  .form__label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.form__p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form__input {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 2px solid #000;
+  font-weight: bold;
+  height: 25px;
+  background-color: rgba(232, 240, 176, 0.63);
+}
+@media (min-width: 280px) and (max-width: 340px) {
+  .form__input {
+    width: 232px;
+  }
+}
+.form__button {
+  color: rgb(0, 0, 0);
+  border-radius: 7px;
+  border: 2px solid #000;
+  font-weight: bold;
+  height: 32px;
+  background-color: rgba(248, 225, 16, 0.993);
+}
+@media (min-width: 280px) and (max-width: 340px) {
+  .form__button {
+    width: 240px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

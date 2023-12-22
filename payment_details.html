@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/fav_logo.jpg" type="image/x-icon">
+    <title>Реквізити оплати</title>
+    <style>
+        .copied-tooltip {
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body class="page">
+
+    <div class="container">
+        <h2 class="container__title">Реквізити оплати <br> Приват Банк</h2>
+
+        <form class="form">
+            <div>
+                <label class="form__label" for="field1">Отримувач Платежу:</label>
+                <p class="form__p">
+                    <input class="form__input" type="text" id="field1" value="ПАСЬКО АЛІНА БОГДАНІВНА" readonly>
+                    <button class="form__button" type="button" onclick="copyToClipboard('field1')">Копіювати</button>
+                </p>
+                <span id="tooltip1" class="copied-tooltip">Скопійовано</span>
+            </div>
+    
+            <div>
+                <label class="form__label" for="field2">IBAN:</label>
+                <p class="form__p">
+                    <input class="form__input" type="text" id="field2" value="UA903052990000026002046203884" readonly>
+                    <button class="form__button" type="button" onclick="copyToClipboard('field2')">Копіювати</button>
+                </p>
+                <span id="tooltip2" class="copied-tooltip">Скопійовано</span>
+            </div>
+    
+            <div>
+                <label class="form__label" for="field3">МФО банку:</label>
+                <p class="form__p">
+                    <input class="form__input" type="text" id="field3" value="305299" readonly>
+                    <button class="form__button" type="button" onclick="copyToClipboard('field3')">Копіювати</button>
+                </p>
+                <span id="tooltip3" class="copied-tooltip">Скопійовано</span>
+            </div>
+    
+            <div>
+                <label class="form__label" for="field4">РНОКПП отримувача:</label>
+                <p class="form__p">
+                    <input class="form__input" type="text" id="field4" value="3492108567" readonly>
+                    <button class="form__button" type="button" onclick="copyToClipboard('field4')">Копіювати</button>
+                </p>
+                <span id="tooltip4" class="copied-tooltip">Скопійовано</span>
+            </div>
+    
+            <div>
+                <label class="form__label" for="field5">Призначення платежу:</label>
+                <p class="form__p">
+                    <input class="form__input" type="text" id="field5" value="Поповнення рахунку ПАСЬКО АЛІНА БОГДАНІВНА" readonly>
+                    <button class="form__button" type="button" onclick="copyToClipboard('field5')">Копіювати</button>
+                </p>
+                <span id="tooltip5" class="copied-tooltip">Скопійовано</span>
+            </div>
+        </form>
+    </div>
+    
+
+    <script>
+        function copyToClipboard(elementId) {
+            var element = document.getElementById(elementId);
+            element.select();
+            document.execCommand("copy");
+            var tooltipId = 'tooltip' + elementId.slice(-1);
+            var tooltip = document.getElementById(tooltipId);
+            tooltip.style.opacity = 1;
+            setTimeout(function () {
+                tooltip.style.opacity = 0;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
