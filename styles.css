@@ -4,7 +4,7 @@
 }
 
 .page {
-  margin: 10px;
+  margin: 30px;
   min-height: 100vh;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-family: "Fira Sans", sans-serif;
@@ -159,12 +159,21 @@ br {
 }
 .container__title {
   font-family: "Fira Sans", sans-serif;
-  font-size: 23px;
-  line-height: 25px;
+  font-size: 26px;
+  line-height: 28px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
   -webkit-text-fill-color: rgb(219, 189, 18);
+}
+.container__back-button {
+  margin-top: 20px;
+}
+.container__back-button-text {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-text-fill-color: rgb(255, 225, 52);
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .form {
@@ -178,8 +187,9 @@ br {
   -webkit-text-stroke: 0.1px #000;
   -webkit-text-fill-color: rgb(255, 225, 52);
 }
-@media (min-width: 280px) and (max-width: 340px) {
+@media (min-width: 20px) and (max-width: 350px) {
   .form__label {
+    margin-bottom: 2px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -199,7 +209,7 @@ br {
   height: 25px;
   background-color: rgba(232, 240, 176, 0.63);
 }
-@media (min-width: 280px) and (max-width: 340px) {
+@media (min-width: 20px) and (max-width: 350px) {
   .form__input {
     width: 232px;
   }
@@ -213,8 +223,9 @@ br {
   height: 32px;
   background-color: rgba(248, 225, 16, 0.993);
 }
-@media (min-width: 280px) and (max-width: 340px) {
+@media (min-width: 20px) and (max-width: 350px) {
   .form__button {
+    margin-top: 1px;
     width: 240px;
   }
 }
