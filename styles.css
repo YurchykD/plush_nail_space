@@ -155,7 +155,8 @@ br {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 .container__title {
   font-family: "Fira Sans", sans-serif;
