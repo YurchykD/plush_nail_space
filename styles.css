@@ -158,12 +158,12 @@ br {
   margin: 0;
 }
 .container__title {
+  font-family: "Fira Sans", sans-serif;
   font-size: 23px;
   line-height: 25px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
-  -webkit-text-stroke: 0.6px #000;
   -webkit-text-fill-color: rgb(219, 189, 18);
 }
 
@@ -174,7 +174,8 @@ br {
   background-color: rgba(155, 145, 107, 0.3);
 }
 .form__label {
-  -webkit-text-stroke: 1px #000;
+  font-family: "Fira Sans", sans-serif;
+  -webkit-text-stroke: 0.1px #000;
   -webkit-text-fill-color: rgb(255, 225, 52);
 }
 @media (min-width: 280px) and (max-width: 340px) {
@@ -189,6 +190,7 @@ br {
   text-align: center;
 }
 .form__input {
+  font-family: "Fira Sans", sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
   border-radius: 7px;
@@ -203,6 +205,7 @@ br {
   }
 }
 .form__button {
+  font-family: "Fira Sans", sans-serif;
   color: rgb(0, 0, 0);
   border-radius: 7px;
   border: 2px solid #000;
