@@ -168,8 +168,6 @@ br {
 }
 .container__back-button {
   margin-top: 20px;
-}
-.container__back-button-text {
   font-family: "Fira Sans", sans-serif;
   -webkit-text-fill-color: rgb(255, 225, 52);
   font-weight: bold;
