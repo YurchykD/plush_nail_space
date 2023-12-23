@@ -5,7 +5,7 @@
 
 .page {
   margin: 30px;
-  min-height: 100vh;
+  min-height: 120vh;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Russo One", sans-serif;
@@ -210,7 +210,7 @@ br {
 }
 @media (min-width: 20px) and (max-width: 350px) {
   .form__input {
-    width: 232px;
+    width: 100%;
   }
 }
 .form__button {
@@ -224,8 +224,13 @@ br {
 }
 @media (min-width: 20px) and (max-width: 350px) {
   .form__button {
+    margin: 0px auto;
     margin-top: 1px;
-    width: 240px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 90px;
   }
 }
 
