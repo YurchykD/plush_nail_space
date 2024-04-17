@@ -176,18 +176,15 @@ br {
 }
 
 .form {
-  display: grid; /* Change to grid for better layout control */
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
-  gap: 20px; /* Gap between items */
   padding: 20px;
   border: 3px solid #000;
   border-radius: 6%;
   background-color: rgba(155, 145, 107, 0.3);
-  max-width: 600px; /* Limiting the form width */
 }
 .form__label {
   font-family: "Fira Sans", sans-serif;
-  color: rgb(255, 225, 52);
+  -webkit-text-stroke: 0.1px #000;
+  -webkit-text-fill-color: rgb(255, 225, 52);
 }
 @media (min-width: 20px) and (max-width: 350px) {
   .form__label {
@@ -196,32 +193,6 @@ br {
     flex-direction: column;
     text-align: center;
   }
-}
-.form__label-price {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-.form__label-price--img {
-  border: 3px solid #000;
-  border-radius: 6%;
-  object-fit: cover;
-  text-align: center;
-  margin: 0 auto;
-  max-width: fit-content;
-  max-height: 150px;
-  transition: 0.5s ease-out;
-}
-@media (min-width: 20px) and (max-width: 350px) {
-  .form__label-price--img {
-    width: 100px;
-    max-height: 100px;
-  }
-}
-.form__label-price--img:hover {
-  transform: scale(1.05);
 }
 .form__p {
   margin-bottom: 10px;
@@ -239,7 +210,7 @@ br {
 }
 @media (min-width: 20px) and (max-width: 350px) {
   .form__input {
-    width: 100%;
+    width: 232px;
   }
 }
 .form__button {
@@ -253,14 +224,58 @@ br {
 }
 @media (min-width: 20px) and (max-width: 350px) {
   .form__button {
-    margin: 0px auto;
     margin-top: 1px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    width: 90px;
+    width: 240px;
   }
+}
+
+.osnova {
+  display: grid; /* Change to grid for better layout control */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+  gap: 20px; /* Gap between items */
+  padding: 20px;
+  border: 3px solid #000;
+  border-radius: 6%;
+  background-color: rgba(155, 145, 107, 0.3);
+  max-width: 600px; /* Limiting the form width */
+}
+.osnova__block {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(255, 225, 52);
+}
+@media (min-width: 20px) and (max-width: 350px) {
+  .osnova__block {
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.osnova__block-link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.osnova__block-link--img {
+  border: 3px solid #000;
+  border-radius: 6%;
+  object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  max-width: fit-content;
+  max-height: 150px;
+  transition: 0.5s ease-out;
+}
+@media (min-width: 20px) and (max-width: 350px) {
+  .osnova__block-link--img {
+    width: 100px;
+    max-height: 100px;
+  }
+}
+.osnova__block-link--img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=styles.css.map */
